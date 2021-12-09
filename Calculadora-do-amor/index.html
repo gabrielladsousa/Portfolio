@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="principal.css" rel="stylesheet">
+    <title>CALCULADORA DO AMOR</title>
+</head>
+<body>
+    <header>
+    <div class="card w-50 m-auto text-center ">
+        <div class="card-header bg-danger text-white">CALCULADORA DO AMOR</div>
+        <div class="card-body">
+         <form class="form-inline w-75 m-auto">
+          <div class="form-group">
+           <input type="text" name="" class="form-control text-center" placeholder="Seu Nome" id="nome" >
+          </div>
+          <div class="pl-4 pr-4">
+           <span> + </span>
+          </div>
+          <div class="form-group">
+           <input type="text" name="" class="form-control text-center" placeholder=" Nome Crush" id="nomeCrush">
+          </div> 
+
+          <div class="form-group">
+            <input type="date" name="suaDataNasc" placeholder="" id="suaDataNasc" required>
+          </div>
+          <div class="pl-4 pr-4">
+            <span>   </span>
+           </div>
+           <div class="form-group">
+            <input type="date" name="crushDataNasc" placeholder="" id="crushDataNasc" required>
+          </div>
+         </form> <br>
+
+         <!-- Toast -->
+          <div class="w-70 m-auto">
+           <button  class="btn btn-success w-50" type="submit" id="liveToastBtn"> Calcular </button>
+           <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="1000">
+                <div class="toast-header">
+                    <strong class="me-auto">ALERTA!</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+
+                <div class="toast-body">
+                </div>
+            </div>
+        </div>
+          </div>
+          <br>
+          <div>
+           <input type="text" name="" placeholder="PORCENTAGEM" class="form-control text-center w-25 m-auto" id="porcentagem" disabled="">
+          </div>
+        </div> 
+      </div>
+    </header>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="modernizr.js"></script>
+    <script src="principal.js"></script>
+</body>
+</html>
