@@ -1,0 +1,318 @@
+/* MECANISMOS DA BARRA DE NAVEGAÇÃO*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-left: -11em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #fff;
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-top: -1em;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  margin-top: 1em;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: black;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* MECANISMOS DO MAIN*/
+.imagem{
+  background: url("Imagens/prato.jpg") no-repeat center center;
+  margin-top: 4em;
+  margin-left: 8em;
+  background-size: cover;
+  height: 110vh;
+}
+
+body {
+background-color: #bcc4ce;
+height: 1050px;
+}
+
+.quadro1 {
+    position: absolute;
+    margin-left: -3em;
+    margin-top: 20px;
+    width: 20em;
+    height: 25em;
+    background: white;
+    max-height: auto;
+    position: absolute;
+}
+
+.quadro2 {
+    position: absolute;
+    margin: 19em;
+    margin-top: 240px;
+    width: 20em;
+    height: 25em;
+    background: white;
+}
+
+.quadro3 {
+    position: absolute;
+    margin: -3em;
+    margin-top: 450px;
+    width: 20em;
+    height: 25em;
+    background: white;
+}
+
+.icon {
+    margin-top: 30px;
+    margin-left: 8em;
+    width: 4em;
+}
+
+.label1{
+    margin-top: 10px;
+    margin-left: 95px;
+    letter-spacing: 2px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.label2{
+  margin-top: 10px;
+  margin-left: 94px;
+  letter-spacing: 2px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.label3{
+  margin-top: 10px;
+  margin-left: 90px;
+  letter-spacing: 2px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.text {
+    margin-top: 25px;
+    font-size: 15px;
+    margin-left: 2em;
+    margin-right: 2em;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.more-information {
+    position: relative;
+    top: 35px;
+    font-size: 16px;
+    margin-left: 125px;
+    margin-right: 2em;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.more-infographics {
+    position: relative;
+    top: 35px;
+    font-size: 16px;
+    margin-left: 125px;
+    margin-right: 2em;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.more-ongs {
+    position: relative;
+    top: 35px;
+    font-size: 16px;
+    margin-left: 125px;
+    margin-right: 2em;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/*FORMATAÇÃO CELULAR*/
+@media screen and (max-width: 999px) {
+
+body {
+  height: 1450px;
+  position: relative
+}
+
+nav{
+  position: fixed;    
+  z-index: 2;    
+  width: 100%;    
+  height: 50px;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 110%;
+  margin-left: 0em;
+}
+
+.mobile-menu div {
+  width: 180%;
+  height: 0.1em;
+}
+
+.quadro1 {
+  margin-top: 15%;
+  margin-left: -16%;
+  width: 70%;
+  height: 25%;
+}
+
+.quadro2 {
+  margin-left: -16%;
+  margin-top: 110%;
+  width: 70%;
+  height: 25%;
+}
+
+.quadro3 {
+  margin-left: -16%;
+  margin-top: 205%;
+  width: 70%;
+  height: 25%;
+}
+
+.icon {
+  width: 3em;
+  margin-left: 41%;
+}
+
+.label1{
+ font-size: 80%;
+ margin-left: 30%;
+}
+
+.label2{
+ font-size: 80%;
+ margin-left: 30%;
+}
+
+.label3{
+ font-size: 80%;
+ margin-left: 29%;
+}
+
+.text {
+  margin-top: 25px;
+  font-size: 85%;
+}
+
+.more-information {
+  top: 0.9em;
+  margin-left: 39%;
+  font-size: 80%;
+}
+
+.more-infographics {
+  top: 0.9em;
+  margin-left: 39%;
+  font-size: 80%;
+}
+
+.more-ongs {
+  top: 0.9em;
+  margin-left: 39%;
+  font-size: 80%;
+}
+}
+
+
+
+
+
